@@ -1,0 +1,13 @@
+.user-List{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 15px;
+   margin-left: 35px;
+   margin-top: 80px;
+}
+
+.test{
+   display: flex;
+   flex-wrap: wrap;
+   width: auto;
+}
