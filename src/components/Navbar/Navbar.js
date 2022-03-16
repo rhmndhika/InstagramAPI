@@ -1,15 +1,10 @@
 import * as React from 'react';
-import { styled, alpha } from '@mui/material/styles';
+import {Link} from 'react-router-dom'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import InputBase from '@mui/material/InputBase';
-import SearchIcon from '@mui/icons-material/Search';
-import {Link} from 'react-router-dom'
-import { NoEncryption } from '@mui/icons-material';
-import { makeStyles } from '@mui/styles';
-import BasicModal from '../Modal/ModalUser'
+import Typography from '@mui/material/Typography';;
+
 
 
 

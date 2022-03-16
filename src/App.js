@@ -1,7 +1,6 @@
 import './App.css';
 import React from "react";
 import UserPost1 from './components/Dummy/UserPost';
-import SearchBar from './components/Search/Search';
 import Detail from './pages/Detail'
 
 import Navbar from './components/Navbar/Navbar';
@@ -24,7 +23,6 @@ function App ()  {
     <div>
         <Navbar />
         <Switch>
-          <Route path="/"  exact component={App} />
           <Route path="/about"  component={About} />
           <Route path="/user"  component={User} />
           <Route path="/detail/:id"  component={Detail} />

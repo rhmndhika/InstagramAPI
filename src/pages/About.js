@@ -1,6 +1,4 @@
 import React from 'react'
-import UserPost1 from '../components/Dummy/UserPost';
-import UserList from '../components/UserList/UserList';
 import Tag from '../components/Tag/Tag'
 
 
