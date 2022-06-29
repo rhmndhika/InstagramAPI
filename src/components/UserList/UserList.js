@@ -34,46 +34,47 @@ function UserList () {
    
 
     return(
+        
         <div className="test">
-            {user.map(user =>(
-                <div className="user-List">
-                <Grid container rowSpacing={1} columns={{ xs: 4, sm: 8, md: 12 }} direction="row"
-                justifyContent="center"
-                alignItems="center"
-                >
-                <Grid item xs={12} md={12} sm={12} lg={12}>
-                <Card sx={{ display: 'flex' }}>
-                    <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                    <CardContent sx={{ flex: '1 0 auto' }}>
-                    <Typography component="div" variant="h5">
-                        {user.title + " " + user.firstName + " " + user.lastName}
-                    </Typography>
-                    <Typography variant="subtitle1" color="text.secondary" component="div">
-                        <p>ID : {user.id}</p>
-                    </Typography>
-                    </CardContent>
-                    <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
-                    
-                    <IconButton aria-label="play/pause">
-                    <Link to={`/detail/${user.id}`} style={{ textDecoration: 'none'}} >
-                        <Button>View Profile</Button>    
-                    </Link>
-                    </IconButton>
-                    </Box>
-                </Box>
+        {user.map(user =>(
+            <div className="user-List">
+            <Grid container rowSpacing={1} columns={{ xs: 4, sm: 8, md: 12 }} direction="row"
+            justifyContent="center"
+            alignItems="center"
+            >
+            <Grid item xs={12} md={12} sm={12} lg={12}>
+            <Card sx={{ display: 'flex' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                <CardContent sx={{ flex: '1 0 auto' }}>
+                <Typography component="div" variant="h5">
+                    {user.title + " " + user.firstName + " " + user.lastName}
+                </Typography>
+                <Typography variant="subtitle1" color="text.secondary" component="div">
+                    <p>ID : {user.id}</p>
+                </Typography>
+                </CardContent>
+                <Box sx={{ display: 'flex', alignItems: 'center', pl: 1, pb: 1 }}>
                 
-                <CardMedia
-                    component="img"
-                    sx={{ width: 151 }}
-                    image={user.picture}
-                    alt="Profile picture"
-                />
-                </Card>
-                </Grid>
-                </Grid>
-                 </div>
-            ))}
-        </div>
+                <IconButton aria-label="play/pause">
+                <Link to={`/detail/${user.id}`} style={{ textDecoration: 'none'}} >
+                    <Button>View Profile</Button>    
+                </Link>
+                </IconButton>
+                </Box>
+            </Box>
+            
+            <CardMedia
+                component="img"
+                sx={{ width: 151 }}
+                image={user.picture}
+                alt="Profile picture"
+            />
+            </Card>
+            </Grid>
+            </Grid>
+             </div>
+        ))}
+    </div>
     )
 }
 

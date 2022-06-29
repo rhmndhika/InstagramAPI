@@ -23,8 +23,8 @@ function BelajarAxios () {
 
 
   const Api = () => {
-      Axios.get("https://new-kbbi-api.herokuapp.com/").then(
-        (response) => {
+      Axios.get("https://new-kbbi-api.herokuapp.com/")
+      .then(response => {
           setApi(response.data.message)
         });
   }

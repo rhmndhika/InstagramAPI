@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import UserPost1 from './components/Dummy/UserPost';
+import UserPost1 from './components/UserPost/UserPost';
 import Detail from './pages/Detail'
 
 import Navbar from './components/Navbar/Navbar';

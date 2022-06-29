@@ -11,16 +11,12 @@ import Typography from '@mui/material/Typography';;
 
 
 
-
-
-
-
 export default function Navbar() {
   return (
   
     <div>
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar>
+      <AppBar style={{backgroundColor: "#00B4CC"}}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -29,7 +25,7 @@ export default function Navbar() {
             color="inherit"
             sx={{ flexGrow: 1}}
             >
-            <Link to="/app" style={{ textDecoration: 'none' }} >
+            <Link to="/app" style={{ textDecoration: 'none', color: 'black' }} >
               Fakestagram
             </Link>
           </Typography>
@@ -40,10 +36,10 @@ export default function Navbar() {
             component="div"
             color="inherit"
             >
-          <Link to="/about" style={{ textDecoration: 'none', paddingLeft: 13 }}>
-              About
+          <Link to="/about" style={{ textDecoration: 'none', paddingLeft: 13, color: 'black' }}>
+              Search
             </Link>
-            <Link to="/user" style={{ textDecoration: 'none', paddingLeft: 13 }}>
+            <Link to="/user" style={{ textDecoration: 'none', paddingLeft: 13, color: 'black' }}>
               User
             </Link>
             </Typography>

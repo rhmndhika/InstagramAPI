@@ -1,5 +1,6 @@
 import React from 'react'
-import Tag from '../components/Tag/Tag'
+import SearchBar from '../components/Search/Search';
+
 
 
 
@@ -8,9 +9,7 @@ function About ()  {
 
     return (
         <div>
-            <h1 style={{marginTop: '70px'}}>About Us</h1>
-            <Tag />
-            
+            <SearchBar />           
         </div>
     )
 }
